@@ -84,7 +84,7 @@ def anti_replace(lst):
     while 'A' in lst:
         lst[lst.index('A')] = 14
     while '2' in lst:
-        lst[lst.index(2)] = 15
+        lst[lst.index('2')] = 15
     while '小王' in lst:
         lst[lst.index('小王')] = 16
     while '大王' in lst:
