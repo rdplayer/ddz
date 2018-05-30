@@ -50,7 +50,7 @@ def replace(lst):
     while 14 in lst:
         lst[lst.index(14)] = 'A'
     while 15 in lst:
-        lst[lst.index(15)] = 2
+        lst[lst.index(15)] = '2'
     while 16 in lst:
         lst[lst.index(16)] = '小王'
     while 17 in lst:
