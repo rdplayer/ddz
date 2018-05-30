@@ -40,11 +40,7 @@ def jiaodizhu():
     if not data:
         abort(400)
 
-    data = list(data)
-    data_arr = []
-    for d in data:
-        if d != ',' and d != ' ':
-            data_arr.append(d)
+    data_arr = data.split(',')
     hand_cards = jdz.anti_replace(data_arr)
     jdz.sort(hand_cards)
     s = jdz.score(hand_cards)
@@ -60,11 +56,7 @@ def jiabei():
     if not data:
         abort(400)
 
-    data = list(data)
-    data_arr = []
-    for d in data:
-        if d != ',' and d != ' ':
-            data_arr.append(d)
+    data_arr = data.split(',')
     hand_cards = jdz.anti_replace(data_arr)
     jdz.sort(hand_cards)
     s = jdz.score(hand_cards)
